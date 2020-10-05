@@ -31,3 +31,17 @@ The miRNA sites span the first exon of the circRNA and interestingly, also span 
 I will perform a TargetScan analysis on the sequence myself and see what sort of concordance there is amongst my results and CircInteractomes results for the `hsa_circ_0022392` sequence. 
 
 It is important to note that CircInteractome provides context+ scores from TargetScan, suggesting that they used UTR sequences to inform context+ scores. This process is still confusing for me and until it is figured out the comparison cannot hold under scrutiny. 
+
+***
+
+### CSCD
+### hsa_circ_0022392
+miRNA table was copied from the results page (search FADS2, common circRNA, chr11:61630443|61631258) and reformatted locally. The start site of the circRNA was added to each miRNA start site to get its context within the circRNA `awk -v s=61630443 -v OFS="\t" '{print $1, $2+s, $3+s, $4, $5}' miR_sites.bed`. 
+
+#### Results in IGV:
+![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0022392.png)
+
+###### Comments
+CSCD seems to use only the first exon in its MRE prediction, however there are far more miRNAs provided with this analysis. 
+
+I will analyse the sequence myself and compare to CSCD. I will also carry out the same analysis on a random circRNA present in both databases to confirm that this is the analysis strategy being carried forward. 
