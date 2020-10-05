@@ -24,6 +24,7 @@ miRNA data for `hsa_circ_0022392` pulled from search query [here](https://circin
 
 #### Results in IGV:
 ![](https://github.com/BarryDigby/MRE/blob/main/test/circinteractome/circinteractome_hsa_circ_0022392.png)
+
 *CircInteractome miR sites given in red*
 
 ###### Comments
@@ -38,9 +39,11 @@ miRNA data was copied and reformatted from the table at [this link](https://circ
 
 #### Results in IGV:
 ![](https://github.com/BarryDigby/MRE/blob/main/test/circinteractome/circinteractome_hsa_circ_0122696.png)
+
 *CircInteractome miR sites given in red*
 
 ###### Comments
+Yet again the miR sites span the first exon and into the intronic sequence of `hsa_circ_0122696`. 
 ***
 
 ### CSCD
@@ -49,6 +52,7 @@ miRNA table was copied from the results page (search FADS2, common circRNA, chr1
 
 #### Results in IGV:
 ![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0022392.png)
+
 *CircInteractome miR sites given in red, CSCD miR sites given in purple*
 
 ###### Comments
@@ -61,6 +65,8 @@ miRNA table copied from results page (search PLCL2, cancer,normal, chr3:17051165
 
 #### Results in IGV:
 ![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0122696.png)
+
 *CircInteractome miR sites given in red, CSCD miR sites given in purple*
 
 ###### Comments
+Consistent with `hsa_circ_0022392`, miR sites for `hsa_circ_0122696` given by CSCD span a very short area of the first exon in the circRNA. 
