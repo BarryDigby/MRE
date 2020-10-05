@@ -35,6 +35,6 @@ miRNA data was copied and reformatted from the `CircInteractome` table at [this 
 *CircInteractome miR sites given in red, CSCD miR sites given in purple*
 
 ###### Comments
-`CSCD` seems to use only the 100nt in its MRE prediction, however there are far more miRNAs provided with this analysis. `CircInteractome` provides much richer annotation spanning the first exon and into the intronic space yet again.***
+Again, `CSCD` seems to use only the 100nt in its MRE prediction. `CircInteractome` provides much richer annotation spanning the first exon and into the intronic space.
 
 
