@@ -35,18 +35,6 @@ miRNA data was copied and reformatted from the `CircInteractome` table at [this 
 *CircInteractome miR sites given in red, CSCD miR sites given in purple*
 
 ###### Comments
-Yet again the miR sites span the first exon and into the intronic sequence of `hsa_circ_0122696`. 
-***
+`CSCD` seems to use only the 100nt in its MRE prediction, however there are far more miRNAs provided with this analysis. `CircInteractome` provides much richer annotation spanning the first exon and into the intronic space yet again.***
 
-### CSCD
-### hsa_circ_0022392
-miRNA table was copied from the results page (search FADS2, common circRNA, chr11:61630443|61631258) and reformatted locally. The start site of the circRNA was added to each miRNA start site to get its context within the circRNA `awk -v s=61630443 -v OFS="\t" '{print $1, $2+s, $3+s, $4, $5}' miR_sites.bed`. 
-
-#### Results in IGV:
-![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0022392.png)
-
-*CircInteractome miR sites given in red, CSCD miR sites given in purple*
-
-###### Comments
-`CSCD` seems to use only the 100nt in its MRE prediction, however there are far more miRNAs provided with this analysis. `CircInteractome` provides much richer annotation spanning the first exon and into the intronic space yet again.
 
