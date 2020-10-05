@@ -16,8 +16,18 @@ I will use `hsa_circ_0022392` as the query circRNA whose parental gene is `FADS2
 ### Circinteractome
 * link to paper: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4829301/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4829301/)
 
-###### miRNA Target ciRNAs  
-> Mature sequences of circRNAs were used in the TargetScan Perl Script to predict the miRNAs which have sequence complementarity with circRNA. The complete miRNA list and sequences were taken from the microRNA database (http://www.mirbase.org/)
+* Methods section from paper: Mature sequences of circRNAs were used in the TargetScan Perl Script to predict the miRNAs which have sequence complementarity with circRNA. The complete miRNA list and sequences were taken from the microRNA database (http://www.mirbase.org/)
 
-miRNA data for `hsa_circ_0022392` available [here](https://circinteractome.nia.nih.gov/api/v2/mirnasearch?circular_rna_query=hsa_circ_0022392&mirna_query=&submit=miRNA+Target+Search). 
 
+### hsa_circ_0022392
+miRNA data for `hsa_circ_0022392` pulled from search query [here](https://circinteractome.nia.nih.gov/api/v2/mirnasearch?circular_rna_query=hsa_circ_0022392&mirna_query=&submit=miRNA+Target+Search). The corresponding bed files used to generate the IGV image can be found under the master branch in `test/circinteractome`. 
+
+#### Results in IGV:
+![](https://github.com/BarryDigby/MRE/blob/main/test/circinteractome/circinteractome_hsa_circ_0022392.png)
+
+###### Comments
+The miRNA sites span the first exon of the circRNA and interestingly, also span the intronic space between exon 1 and exon 2. The total length of sequence where miRNAs appear is 272nt in length, suggesting that predefined sequence length for Targetscan analysis was not adopted. Ultimately I still question why miRNA sites are not appearing along the entire circRNA sequence. 
+
+I will perform a TargetScan analysis on the sequence myself and see what sort of concordance there is amongst my results and CircInteractomes results for the `hsa_circ_0022392` sequence. 
+
+It is important to note that CircInteractome provides context+ scores from TargetScan, suggesting that they used UTR sequences to inform context+ scores. This process is still confusing for me and until it is figured out the comparison cannot hold under scrutiny. 
