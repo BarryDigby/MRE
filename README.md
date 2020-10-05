@@ -48,17 +48,5 @@ miRNA table was copied from the results page (search FADS2, common circRNA, chr1
 *CircInteractome miR sites given in red, CSCD miR sites given in purple*
 
 ###### Comments
-CSCD seems to use only the first exon in its MRE prediction, however there are far more miRNAs provided with this analysis. 
+`CSCD` seems to use only the 100nt in its MRE prediction, however there are far more miRNAs provided with this analysis. `CircInteractome` provides much richer annotation spanning the first exon and into the intronic space yet again.
 
-I will analyse the sequence myself and compare to CSCD. I will also carry out the same analysis on a random circRNA present in both databases to confirm that this is the analysis strategy being carried forward. 
-
-### hsa_circ_0122696
-miRNA table copied from results page (search PLCL2, cancer,normal, chr3:17051165|17109557) and reformatted locally. 
-
-#### Results in IGV:
-![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0122696.png)
-
-*CircInteractome miR sites given in red, CSCD miR sites given in purple*
-
-###### Comments
-Consistent with `hsa_circ_0022392`, miR sites for `hsa_circ_0122696` given by CSCD span a very short area of the first exon in the circRNA. 
