@@ -13,7 +13,7 @@ The databases I will interrogate are [CircInteractome](https://circinteractome.n
 
 I will use `hsa_circ_0022392` as the query circRNA whose parental gene is `FADS2`, as I have Arraystar data correpsonding to this circRNA and its MRE sites calculated from both `miRanda` and `TargetScan`. 
 
-### Circinteractome
+### CircInteractome
 * link to paper: [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4829301/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4829301/)
 
 * Methods section from paper: Mature sequences of circRNAs were used in the TargetScan Perl Script to predict the miRNAs which have sequence complementarity with circRNA. The complete miRNA list and sequences were taken from the microRNA database (http://www.mirbase.org/)
@@ -24,6 +24,7 @@ miRNA data for `hsa_circ_0022392` pulled from search query [here](https://circin
 
 #### Results in IGV:
 ![](https://github.com/BarryDigby/MRE/blob/main/test/circinteractome/circinteractome_hsa_circ_0022392.png)
+*CircInteractome miR sites given in red*
 
 ###### Comments
 The miRNA sites span the first exon of the circRNA and interestingly, also span the intronic space between exon 1 and exon 2. The total length of sequence where miRNAs appear is 272nt in length, suggesting that predefined sequence length for Targetscan analysis was not adopted. Ultimately I still question why miRNA sites are not appearing along the entire circRNA sequence. 
@@ -32,6 +33,14 @@ I will perform a TargetScan analysis on the sequence myself and see what sort of
 
 It is important to note that CircInteractome provides context+ scores from TargetScan, suggesting that they used UTR sequences to inform context+ scores. This process is still confusing for me and until it is figured out the comparison cannot hold under scrutiny. 
 
+### hsa_circ_0122696
+miRNA data was copied and reformatted from the table at [this link](https://circinteractome.nia.nih.gov/api/v2/mirnasearch?circular_rna_query=hsa_circ_0122696&mirna_query=&submit=miRNA+Target+Search). 
+
+#### Results in IGV:
+![](https://github.com/BarryDigby/MRE/blob/main/test/circinteractome/circinteractome_hsa_circ_0122696.png)
+*CircInteractome miR sites given in red*
+
+###### Comments
 ***
 
 ### CSCD
@@ -40,8 +49,18 @@ miRNA table was copied from the results page (search FADS2, common circRNA, chr1
 
 #### Results in IGV:
 ![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0022392.png)
+*CircInteractome miR sites given in red, CSCD miR sites given in purple*
 
 ###### Comments
 CSCD seems to use only the first exon in its MRE prediction, however there are far more miRNAs provided with this analysis. 
 
 I will analyse the sequence myself and compare to CSCD. I will also carry out the same analysis on a random circRNA present in both databases to confirm that this is the analysis strategy being carried forward. 
+
+### hsa_circ_0122696
+miRNA table copied from results page (search PLCL2, cancer,normal, chr3:17051165|17109557) and reformatted locally. 
+
+#### Results in IGV:
+![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0122696.png)
+*CircInteractome miR sites given in red, CSCD miR sites given in purple*
+
+###### Comments
