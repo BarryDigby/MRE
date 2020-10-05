@@ -6,7 +6,7 @@ My own questions that I intend to address:
 
 * Currently I agree with the notion that using only the BSJ sequence for MRE analysis is the most plausible yet conservative approach. However this method omits a large portion of the circRNA sequence. 
 
-* With regards to targetscan, to predict context scores of miRNAs the UTR sequence of the gene must be provided. I am still unsure how to obtain UTR sequences of miRNAs. 
+* With regards to targetscan, to predict context scores of miRNAs the UTR sequence of the gene must be provided. I am still unsure how to obtain UTR sequences of circRNAs. 
 
 # Databases
 The databases I will interrogate are [CircInteractome](https://circinteractome.nia.nih.gov/) and [CSCD](https://gb.whu.edu.cn/CSCD/) as they provide miRNA sites on a given circRNA. 
