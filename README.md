@@ -25,6 +25,15 @@ For `CircInteractome` the miRNA sites span the first exon of the circRNA and int
 
 `CSCD` however only uses a short ~100nt sequence for miRNA prediction.
 
+### ArrayStar Results for hsa_circ_0022393
+Arraystar provide a commercial service for the annotation of circRNAs. Below are the ArrayStar results overlayed with CSCD and circinteractome results. 
+
+![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0022392.png)
+
+*ArrayStar in Aqua, CircInteractome in Red, CSCD in Green* 
+
+###### Comments
+ArrayStar and CircInteractome seem to follow the same set of rules when predicting miRNA binding sites according to the visualisation
 
 ## hsa_circ_0122696
 miRNA data was copied and reformatted from the `CircInteractome` table at [this link](https://circinteractome.nia.nih.gov/api/v2/mirnasearch?circular_rna_query=hsa_circ_0122696&mirna_query=&submit=miRNA+Target+Search) and miRNA table copied from `CSCD` results page (search PLCL2, cancer,normal, chr3:17051165|17109557) and reformatted locally. 
