@@ -28,7 +28,7 @@ For `CircInteractome` the miRNA sites span the first exon of the circRNA and int
 ### ArrayStar Results for hsa_circ_0022393
 Arraystar provide a commercial service for the annotation of circRNAs. Below are the ArrayStar results overlayed with CSCD and circinteractome results. 
 
-![](https://github.com/BarryDigby/MRE/blob/main/test/CSCD/CSCD_hsa_circ_0022392.png)
+![](https://github.com/BarryDigby/MRE/blob/main/test/ArrayStar/hsa_circ_0022392_arraystar.png)
 
 *ArrayStar in Aqua, CircInteractome in Red, CSCD in Green* 
 
